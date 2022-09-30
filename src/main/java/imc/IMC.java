@@ -81,7 +81,7 @@ public class IMC extends Application {
 	}
 	
 	private void cambiaEstado() {
-		if(imc.get()<18.5) {
+		if(imc.get()>=0 && imc.get()<18.5) {
 			estado.setText("Bajo peso");
 		} else if(imc.get()>=18.5 && imc.get()<25) {
 			estado.setText("Normal");
